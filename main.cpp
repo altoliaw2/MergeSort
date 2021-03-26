@@ -54,10 +54,11 @@ template <class Cls>
     }
 
 int main(){
-    int ia_Arr[5]= {1, 2, 3, 4, 5};
-    fn_MergeSort<int>(ia_Arr, 0, (5-1));
+    int i_Count= 5;
+    int ia_Arr[i_Count]= {1, 2, 3, 4, 5};
+    fn_MergeSort<int>(ia_Arr, 0, (i_Count-1));
 
-    for(int i_Ct=0; i_Ct< 5; i_Ct++){
+    for(int i_Ct=0; i_Ct< i_Count; i_Ct++){
         std::cout<< ia_Arr[i_Ct]<< " ";
     }
     return 0;
